@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ananya Sharma</title>
+<meta name="description" content="Portfolio of Ananya Sharma, MBA Tech (Data Science) student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1b1340;--panel:#251a55;--text:#f6efe0;--muted:#bdb3dc;--accent:#f2a900;--line:#3a2f70}
+body[data-mood="reading"]{--accent:#4fd1b5}
+body[data-mood="dancing"]{--accent:#ff6a9a}
+body[data-mood="listening"]{--accent:#f2a900}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font:400 1rem/1.7 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:720px;margin:0 auto;padding:0 1.25rem}
+nav{border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:1.25rem;overflow-x:auto;padding-top:.9rem;padding-bottom:.9rem;white-space:nowrap}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+header{padding:3.5rem 0 2.5rem}
+h1{font:400 clamp(2.4rem,10vw,3.8rem)/1.1 "Rozha One",Georgia,serif;margin-bottom:.6rem}
+.sub{color:var(--accent);font-weight:500}
+.intro{margin-top:1rem;max-width:46ch}
+section{padding:2rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.4rem;margin-bottom:.9rem}
+p+p{margin-top:.9rem}
+.item{margin-bottom:1.4rem}
+.item h3{font-size:1.05rem}
+.when{color:var(--muted);font-size:.95rem;margin-bottom:.3rem}
+ul.plain{padding-left:1.2rem;margin-top:.4rem}
+h3.g{font-size:1rem;margin:1rem 0 .4rem;color:var(--muted);font-weight:500}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0}
+.tags li{background:var(--panel);border-radius:6px;padding:.2rem .65rem;font-size:.95rem}
+.moods{display:flex;flex-wrap:wrap;gap:.5rem;margin:.9rem 0}
+.moods button{font:inherit;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.4rem 1rem;cursor:pointer}
+.moods button[aria-pressed="true"]{background:var(--accent);color:#1b1340;border-color:var(--accent);font-weight:700}
+#moodText{border-left:3px solid var(--accent);padding-left:1rem;min-height:4.5rem}
+.contact a{margin-right:1.2rem}
+footer{padding:1.5rem 0 3rem;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body data-mood="listening">
+<nav aria-label="Sections"><div class="wrap">
+  <a href="#about">About</a><a href="#work">Experience</a><a href="#skills">Skills</a><a href="#interests">Interests</a><a href="#contact">Contact</a>
+</div></nav>
+
+<header><div class="wrap">
+  <h1>Ananya Sharma</h1>
+  <p class="sub">MBA Tech (Data Science), 3rd year</p>
+  <p class="intro">I'm a management and data student who enjoys organising events and working with teams.</p>
+</div></header>
+
+<main class="wrap">
+<section id="about">
+  <h2>About</h2>
+  <p>I'm Ananya, a third-year MBA Tech student specialising in Data Science. I'm interested in how data and planning help teams make better decisions.</p>
+  <p>I like organising things and working with people. Outside college, I read, dance and listen to a lot of Bollywood music.</p>
+</section>
+
+<section id="work">
+  <h2>Experience</h2>
+  <div class="item">
+    <h3>Data Analyst Intern, pharmaceutical company</h3>
+    <p class="when">2 months</p>
+    <p>Worked as a data analyst intern, using data analysis on company data and learning how it supports business decisions.</p>
+  </div>
+  <div class="item">
+    <h3>Joint Secretary, Sports Committee</h3>
+    <p class="when">Last year</p>
+    <p>Helped plan and run the college's sports events.</p>
+    <ul class="plain">
+      <li>Planned events and managed the budget</li>
+      <li>Divided tasks among team members</li>
+      <li>Reviewed each event afterwards to see what could be improved</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <h3 class="g">Planning and management</h3>
+  <ul class="tags">
+    <li>Sports event planning</li><li>Project management</li><li>Strategic planning</li>
+    <li>Budget management</li><li>Task delegation</li><li>Performance evaluation</li>
+  </ul>
+  <h3 class="g">Working with others</h3>
+  <ul class="tags">
+    <li>Organization</li><li>Team collaboration</li><li>Time management</li>
+    <li>Logical thinking</li><li>Communication</li><li>Empathy</li>
+  </ul>
+</section>
+
+<section id="interests">
+  <h2>Interests</h2>
+  <p>I enjoy these three things the most. Tap one to read a bit more.</p>
+  <div class="moods" role="group" aria-label="Choose an interest">
+    <button type="button" data-mood="reading" aria-pressed="false">Reading</button>
+    <button type="button" data-mood="dancing" aria-pressed="false">Dancing</button>
+    <button type="button" data-mood="listening" aria-pressed="true">Music</button>
+  </div>
+  <p id="moodText" aria-live="polite"></p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>You can reach me here.</p>
+  <!-- TODO: replace these two links with your real email and LinkedIn -->
+  <p><a href="mailto:ananyasharma3008@gmail.com">Email</a><a href="https://www.linkedin.com/in/ananya-sharma-b78493359/" target="_blank" rel="noopener">LinkedIn</a></p>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; Ananya Sharma</div></footer>
+
+<script>
+const moods={
+  reading:"I like reading books in my free time. It helps me relax and see things from different points of view.",
+  dancing:"I enjoy dancing. It's a good way to take a break and stay active.",
+  listening:"I listen to Bollywood songs most days, whether I'm studying, travelling or just relaxing."
+};
+const text=document.getElementById("moodText");
+const btns=document.querySelectorAll(".moods button");
+function setMood(m){
+  document.body.dataset.mood=m;
+  text.textContent=moods[m];
+  btns.forEach(b=>b.setAttribute("aria-pressed",b.dataset.mood===m));
+}
+btns.forEach(b=>b.addEventListener("click",()=>setMood(b.dataset.mood)));
+setMood("listening");
+</script>
+</body>
+</html>
